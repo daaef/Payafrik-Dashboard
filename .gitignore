@@ -4,3 +4,5 @@
 css/*.scss*
 /doc/
 /.idea/
+/LICENSE.txt
+/site.webmanifest
