@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>PayAfrik Dashboard UI</title>
+  <title>PayAfrik Dashboard UI | Wallet</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -50,13 +50,13 @@
           </div>
           <div class="cash--crypto--btns">
             <div>
-            <div class="sub-button mr-50">
-              <button>BUY WITH CASH</button>
-            </div>
+              <div class="sub-button mr-50">
+                <button>BUY WITH CASH</button>
+              </div>
 
-            <div class="sub-button ml-56">
-              <button>BUY WITH CRYPTO</button>
-            </div>
+              <div class="sub-button ml-56">
+                <button>BUY WITH CRYPTO</button>
+              </div>
             </div>
           </div>
 
@@ -140,14 +140,14 @@
             <img src="img/logo.png" alt="logo">
           </div>
           <ul>
-            <li class="active">
-              <a href="#">
+            <li>
+              <a href="index.html">
                 <img class="mr-20" src="img/home.png" alt="">
                 Home
               </a>
             </li>
-            <li>
-              <a href="wallet.html">
+            <li class="active">
+              <a href="#">
                 <img class="mr-20" src="img/side-wallet.png" alt="">
                 Wallet
               </a>
@@ -306,139 +306,109 @@
           <div>
             <div class="welcome-text">
               <div class="text-center">
-                <p class="w-100 c-white">welcome to</p>
-                <h1 class="w-100 c-white am-type mt-0 mb-0">PayAfrik.io</h1>
+                <h1 class="w-100 c-white am-type mt-0 mb-0 text-large light">Wallets</h1>
               </div>
             </div>
-            <ul class="card-links">
-              <li class="link-card">
-                <a href="#">
-                  <div class="imge">
-                    <img src="img/purse.png" alt="purse">
-                  </div>
-                  <p class="desc c-white text-center mb-8">Manage your wallets &amp; make transactions</p>
-                  <p class="higlight text-center">Make Transactions</p>
-                </a>
-              </li>
-              <li class="link-card active">
-                <a href="#">
-                  <div class="imge">
-                    <img src="img/bills.png" alt="purse">
-                  </div>
-                  <p class="desc c-white text-center mb-8">Pay your bills for utilities &amp; services</p>
-                  <p class="higlight text-center">Pay Bills</p>
-                </a>
-              </li>
-              <li class="link-card">
-                <a href="#">
-                  <div class="imge">
-                    <img src="img/exchange.png" alt="purse">
-                  </div>
-                  <p class="desc c-white text-center mb-8">Exchange your cryptocurrencies with ease</p>
-                  <p class="higlight text-center">Exchange</p>
-                </a>
-              </li>
-              <li class="link-card">
-                <a href="#">
-                  <div class="imge">
-                    <img src="img/supporting.png" alt="purse">
-                  </div>
-                  <p class="desc c-white text-center mb-8">Get professional support &amp; quality customer care</p>
-                  <p class="higlight text-center">Support</p>
-                </a>
-              </li>
-            </ul>
-            <div class="wallets--and--transactions">
-              <div class="wallets">
-                <h3 class="c-white">WALLETS</h3>
-                <div class="table--holder">
-                  <table>
-                    <thead>
-                    <tr>
-                      <th class="text-left"><span>ASSET NAME</span></th>
-                      <th>PRICE</th>
-                      <th>24H CHANGE</th>
-                      <th>MARKET CAP</th>
-                      <th>30 DAY TREND</th>
-                      <th>BALANCE</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr onclick="window.location='#';">
-                      <td>
-                    <span>
-                    <img src="img/Africoin.png" alt="">
-                    <span class="ml-16 d-block">
-                      <span class="mb-4 d-block">Africoin</span>
-                      <span class="muted">AFK</span>
-                    </span>
-                  </span>
-                      </td>
-                      <td>$1.00</td>
-                      <td><span class="c-success">+0.3%</span></td>
-                      <td>$3.21B</td>
-                      <td>
-                        <canvas id="myChart"></canvas>
-                      </td>
-                      <td><span class="c-afk">0AFK</span></td>
-                    </tr>
-                    <tr onclick="window.location='#';">
-                      <td>
-                  <span>
-                    <img src="img/bitcoin.png" alt="">
-                    <span class="ml-16 d-block">
-                      <span class="mb-4 d-block">Bitcoin</span>
-                      <span class="muted">BTC</span>
-                    </span>
-                  </span>
-                      </td>
-                      <td>$7,634.32</td>
-                      <td><span class="c-success">+1.19%</span></td>
-                      <td>$140B</td>
-                      <td>
-                        <canvas id="myChart1"></canvas>
-                      </td>
-                      <td><span class="c-btc">0BTC</span></td>
-                    </tr>
-                    <tr onclick="window.location='#';">
-                      <td>
-                  <span>
-                    <img src="img/eth.png" alt="">
-                    <span class="ml-16 d-block">
-                      <span class="mb-4 d-block">Ethereum</span>
-                      <span class="muted">ETH</span>
-                    </span>
-                  </span>
-                      </td>
-                      <td>$7,634.32</td>
-                      <td><span class="c-success">+0.94%</span></td>
-                      <td>$21.64B</td>
-                      <td>
-                        <canvas id="myChart2"></canvas>
-                      </td>
-                      <td><span class="c-eth">0BTC</span></td>
-                    </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="add--more">
-                  <button class="blueish-btn btn">+Add More</button>
-                </div>
+            <div class="flex flex-wrap flex-between flex-stretch">
+              <div class="wallet-sidebar">
+                <ul>
+                  <li class="mt-20 mb-20 w-active">
+                    <a href="#" data-link-class="w-afk">
+                      <span class="d-block afk am-type mb-8 text-right bold w-title">Africoin</span>
+                      <span class="muted w-100 text-right d-block">0 AFK</span>
+                    </a>
+                  </li>
+                  <li class="mt-20 mb-20">
+                    <a href="#" data-link-class="w-btc">
+                      <span class="d-block btc am-type mb-8 text-right bold w-title">Bitcoin</span>
+                      <span class="muted w-100 text-right d-block">0 BTC</span>
+                    </a>
+                  </li>
+                  <li class="mt-20 mb-20">
+                    <a href="#" data-link-class="w-eth">
+                      <span class="d-block eth am-type mb-8 text-right bold w-title">Ethereum</span>
+                      <span class="muted w-100 text-right d-block">0 ETH</span>
+                    </a>
+                  </li>
+                  <li class="mt-40 mb-20">
+                    <a href="#" class="btn dashed">
+                        + Add more
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <div class="transactions">
-                <h3 class="c-white">TRANSACTIONS</h3>
-                <table>
-                  <thead>
-                  <tr>
-                    <th class="text-left"><span>TYPE</span></th>
-                    <th>AMOUNT</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  </tbody>
-                </table>
-                <div class="no-trans">
-                  <p class="c-white">No Transactions</p>
+              <div class="wallet-content w-afk">
+                <div class="wallet-description c-white flex h-100">
+                    <p>
+                      <span class="uppercase wall-desc d-block mb-4">Description</span>
+                      <span class="small-text">PayAfrik offers a cryptocurrency wallet with which users can accept cryptocurrencies for services rendered & pay with cryptocurrencies for services received. The PayAfrik wallet can receive and send value anywhere.</span>
+                    </p>
+                </div>
+                <div class="afk-wallet">
+                  <div class="w-100">
+                    <div class="w-100 text-center">
+                      <img height="40" src="img/Africoin.png" alt="">
+                      <h2 class="c-d-afk mt-8"><span class="large-text">0</span>AFK</h2>
+                      <h3 class="c-white light"><span class="small-text mr-4">$</span>0.00 USD</h3>
+                    </div>
+                    <div class="wallet-btns flex flex-center flex-wrap w-100 mt-20">
+                      <button class="normal-btn afk-bordered mr-20"  data-link-class="wallet-modal-active" data-modal="wallet--send">Send</button>
+                      <button class="normal-btn afk-bordered mr-20"  data-link-class="wallet-modal-active" data-modal="wallet--recieve">Recieve</button>
+                      <a href="#" class="icon-btn">
+                        <img src="img/exchange-icon.png" height="35" alt="">
+                      </a>
+                    </div>
+                    <div class="wallet-chart">
+                        <p class="uppercase c-white small-text mt-20 mb-12">Price Chart</p>
+                        <h2 class="light c-white">$1.00</h2>
+                      <p class="small-text muted">1 AFK</p>
+                      <canvas id="myChart"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="btc-wallet">
+                  <div class="w-100">
+                    <div class="w-100 text-center">
+                      <img height="40" src="img/bitcoin.png" alt="">
+                      <h2 class="c-d-btc mt-8"><span class="large-text">0</span>BTC</h2>
+                      <h3 class="c-white light"><span class="small-text mr-4">$</span>0.00 USD</h3>
+                    </div>
+                    <div class="wallet-btns flex flex-center flex-wrap w-100 mt-20">
+                      <button class="normal-btn btc-bordered mr-20"  data-link-class="wallet-modal-active" data-modal="wallet--send">Send</button>
+                      <button class="normal-btn btc-bordered mr-20"  data-link-class="wallet-modal-active" data-modal="wallet--recieve">Recieve</button>
+                      <a href="#" class="icon-btn">
+                        <img src="img/exchange-icon.png" height="35" alt="">
+                      </a>
+                    </div>
+                    <div class="wallet-chart">
+                        <p class="uppercase c-white small-text mt-20 mb-12">Price Chart</p>
+                        <h2 class="light c-white">$1.00</h2>
+                      <p class="small-text muted">1 BTC</p>
+                      <canvas id="myChart1"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="eth-wallet">
+                  <div class="w-100">
+                    <div class="w-100 text-center">
+                      <img height="40" src="img/eth.png" alt="">
+                      <h2 class="c-d-eth mt-8"><span class="large-text">0</span>ETH</h2>
+                      <h3 class="c-white light"><span class="small-text mr-4">$</span>0.00 USD</h3>
+                    </div>
+                    <div class="wallet-btns flex flex-center flex-wrap w-100 mt-20">
+                      <button class="normal-btn eth-bordered mr-20"  data-link-class="wallet-modal-active" data-modal="wallet--send">Send</button>
+                      <button class="normal-btn eth-bordered mr-20"  data-link-class="wallet-modal-active" data-modal="wallet--recieve">Recieve</button>
+                      <a href="#" class="icon-btn">
+                        <img src="img/exchange-icon.png" height="35" alt="">
+                      </a>
+                    </div>
+                    <div class="wallet-chart">
+                        <p class="uppercase c-white small-text mt-20 mb-12">Price Chart</p>
+                        <h2 class="light c-white">$1.00</h2>
+                      <p class="small-text muted">1 ETH</p>
+                      <canvas id="myChart2"></canvas>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -466,7 +436,84 @@
     </section>
   </div>
   <div class="wallet--modals">
-    wallet modals here
+    <div class="wallet--send wallet-active">
+      <a href="#" class="modal-close">
+        <img src="img/close.png" alt="">
+      </a>
+      <div class="modal-content">
+        <div class="main-modal">
+          <div class="w-100">
+            <div class="modal-title">
+              <h3 class="light text-center">Send Active</h3>
+              <h3 class="am-type">token</h3>
+            </div>
+            <div class="token-details">
+              <p class="highlight">AVAILABLE TOKEN</p>
+              <h1>2,500.24</h1>
+              <p class="light">1 AFK TOKEN = 1.00 NGN</p>
+            </div>
+            <div class="token--description">
+              <p class="c-white">
+                You can use AFK tokens to carry out transactions on this platform from purchasing utilities to other items
+                in our mart. you can also transfer them to your AFK mastercard and make payments on physical machines or
+                withdraw from an ATM.
+              </p>
+            </div>
+            <div class="cash--crypto--btns">
+              <div>
+                <div class="sub-button mr-50">
+                  <button>BUY WITH CASH</button>
+                </div>
+
+                <div class="sub-button ml-56">
+                  <button>BUY WITH CRYPTO</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wallet--recieve">
+      <a href="#" class="modal-close">
+        <img src="img/close.png" alt="">
+      </a>
+      <div class="modal-content">
+        <div class="main-modal">
+          <div class="w-100">
+            <div class="modal-title">
+              <h3 class="light text-center">Recieve Active</h3>
+              <h3 class="am-type">token</h3>
+            </div>
+            <div class="token-details">
+              <p class="highlight">AVAILABLE TOKEN</p>
+              <h1>2,500.24</h1>
+              <p class="light">1 AFK TOKEN = 1.00 NGN</p>
+            </div>
+            <div class="token--description">
+              <p class="c-white">
+                You can use AFK tokens to carry out transactions on this platform from purchasing utilities to other items
+                in our mart. you can also transfer them to your AFK mastercard and make payments on physical machines or
+                withdraw from an ATM.
+              </p>
+            </div>
+            <div class="cash--crypto--btns">
+              <div>
+                <div class="sub-button mr-50">
+                  <button>BUY WITH CASH</button>
+                </div>
+
+                <div class="sub-button ml-56">
+                  <button>BUY WITH CRYPTO</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <script src="js/vendor/modernizr-3.8.0.min.js"></script>
@@ -477,7 +524,6 @@
   /*Chart 1*/
   var ctx = document.getElementById("myChart");
   ctx.getContext('2d');
-  ctx.height = 40;
   var options = {
     responsive: true, // Instruct chart js to respond nicely.
     maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height
@@ -486,22 +532,22 @@
     scales: {
       xAxes: [{
         gridLines: {
-          display: false
+          display: true
         },
         ticks: {
-          display: false //this will remove only the label
+          display: true //this will remove only the label
         }
       }],
       yAxes: [{
         gridLines: {
-          display: false
+          display: true
         },
         ticks: {
-          display: false //this will remove only the label
+          display: true //this will remove only the label
         }
       }]
     }, legend: {
-      display: false,
+      display: true,
     },
     elements: {
       line: {
@@ -515,25 +561,28 @@
   var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: ["Tokyo", "Mumbai", "Mexico City", "Shanghai", "Sao Paulo", "New York", "Karachi", "Buenos Aires", "Delhi", "Moscow"],
-      datasets: [{
-        label: 'Series 1', // Name the series
-        data: [500, 50, 2424, 14040, 14141, 4111, 4544, 47, 5555, 6811], // Specify the data values array
-        fill: false,
-        lineTension: 0,
-        borderColor: '#4451ff', // Add custom color border (Line)
-        backgroundColor: '#4451ff', // Add custom color background (Points and Fill)
-        borderWidth: 1 // Specify bar border width
-      }]
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [
+        {
+          label: "My Second dataset",
+          fillColor: "rgba(151,187,205,0.2)",
+          strokeColor: "rgba(151,187,205,1)",
+          pointColor: "rgba(151,187,205,1)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(151,187,205,1)",
+          data: [28, 48, 40, 19, 86, 27, 90]
+        }]
     },
     options: options
   });
 
-
+  ctx.style.height = "174px";
+  ctx.style.maxHeight = "174px";
+  ctx.style.width = "100%";
   /*Chart 2*/
   var ctx1 = document.getElementById("myChart1");
   ctx1.getContext('2d');
-  ctx1.height = 40;
   var options = {
     responsive: true, // Instruct chart js to respond nicely.
     maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height
@@ -542,22 +591,22 @@
     scales: {
       xAxes: [{
         gridLines: {
-          display: false
+          display: true
         },
         ticks: {
-          display: false //this will remove only the label
+          display: true //this will remove only the label
         }
       }],
       yAxes: [{
         gridLines: {
-          display: false
+          display: true
         },
         ticks: {
-          display: false //this will remove only the label
+          display: true //this will remove only the label
         }
       }]
     }, legend: {
-      display: false,
+      display: true,
     },
     elements: {
       line: {
@@ -568,28 +617,32 @@
       }
     }
   };
-
   var myChart1 = new Chart(ctx1, {
     type: 'line',
     data: {
-      labels: ["Tokyo", "Mumbai", "Mexico City", "Shanghai", "Sao Paulo", "New York", "Karachi", "Buenos Aires", "Delhi", "Moscow"],
-      datasets: [{
-        label: 'Series 1', // Name the series
-        data: [500, 50, 2424, 14040, 14141, 4111, 4544, 47, 5555, 6811], // Specify the data values array
-        fill: false,
-        lineTension: 0,
-        borderColor: '#f98e12', // Add custom color border (Line)
-        backgroundColor: '#f98e12', // Add custom color background (Points and Fill)
-        borderWidth: 1 // Specify bar border width
-      }]
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [
+        {
+          label: "My Second dataset",
+          fillColor: "rgba(151,187,205,0.2)",
+          strokeColor: "rgba(151,187,205,1)",
+          pointColor: "rgba(151,187,205,1)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(151,187,205,1)",
+          data: [28, 48, 40, 19, 86, 27, 90]
+        }]
     },
     options: options
   });
+
+  ctx1.style.height = "174px";
+  ctx1.style.maxHeight = "174px";
+  ctx1.style.width = "100%";
 
   /*Chart 3*/
   var ctx2 = document.getElementById("myChart2");
   ctx2.getContext('2d');
-  ctx2.height = 40;
   var options = {
     responsive: true, // Instruct chart js to respond nicely.
     maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height
@@ -598,22 +651,22 @@
     scales: {
       xAxes: [{
         gridLines: {
-          display: false
+          display: true
         },
         ticks: {
-          display: false //this will remove only the label
+          display: true //this will remove only the label
         }
       }],
       yAxes: [{
         gridLines: {
-          display: false
+          display: true
         },
         ticks: {
-          display: false //this will remove only the label
+          display: true //this will remove only the label
         }
       }]
     }, legend: {
-      display: false,
+      display: true,
     },
     elements: {
       line: {
@@ -624,23 +677,38 @@
       }
     }
   };
-
   var myChart2 = new Chart(ctx2, {
     type: 'line',
     data: {
-      labels: ["Tokyo", "Mumbai", "Mexico City", "Shanghai", "Sao Paulo", "New York", "Karachi", "Buenos Aires", "Delhi", "Moscow"],
-      datasets: [{
-        label: 'Series 1', // Name the series
-        data: [500, 50, 2424, 14040, 14141, 4111, 4544, 47, 5555, 6811], // Specify the data values array
-        fill: false,
-        lineTension: 0,
-        borderColor: '#50599c', // Add custom color border (Line)
-        backgroundColor: '#50599c', // Add custom color background (Points and Fill)
-        borderWidth: 1 // Specify bar border width
-      }]
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [
+        {
+          label: "My Second dataset",
+          fillColor: "rgba(151,187,205,0.2)",
+          strokeColor: "rgba(151,187,205,1)",
+          pointColor: "rgba(151,187,205,1)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(151,187,205,1)",
+          data: [28, 48, 40, 19, 86, 27, 90]
+        }]
     },
     options: options
   });
+
+  ctx2.style.height = "174px";
+  ctx2.style.maxHeight = "174px";
+  ctx2.style.width = "100%";
+// /*
+//   var ctx = document.getElementById("myChart").getContext("2d");
+//
+//   var data = {
+//     labels: ["January", "February", "March", "April", "May", "June", "July"],
+//     datasets: [
+//     ]
+//   };
+//
+//   var myLineChart = new Chart(ctx).Line(data, {});*/
 </script>
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
