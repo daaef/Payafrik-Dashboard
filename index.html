@@ -453,7 +453,7 @@
       <div class="modal-content">
         <div class="main-modal">
           <div class="modal-title">
-            <h3 class="light text-center">WITHDRAW</h3>
+            <h3 class="light text-center">TRANSFER</h3>
             <h3 class="am-type">token</h3>
           </div>
           <div class="token-details">
@@ -461,12 +461,28 @@
             <h1>2,500.24</h1>
             <p class="light">1 AFK TOKEN = 1.00 NGN</p>
           </div>
+          <div class="transfer--info flex flex-center">
+            <form class="text-center">
+              <div class="mt-20">
+                <img src="img/recipient.png" alt="">
+                <input id="rec-phone" type="text" placeholder="The phone number of the user you are transferring to">
+                <label for="rec-phone">Recipients <span class="c-white">Phone number</span></label>
+              </div>
+              <div class="mt-20">
+                <img src="img/tokenam.png" alt="">
+                <input id="token-am" type="text" placeholder="How much you want to transfer">
+                <label for="token-am">Token <span class="c-white">Amount</span></label>
+              </div>
+              <div class="text-right sub--btn--holder w-100">
+                <div class="sub-button mt-20 w-100">
+                  <button class="w-100">TRANSFER</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
-  </div>
-  <div class="wallet--modals">
-    wallet modals here
   </div>
 </div>
 <script src="js/vendor/modernizr-3.8.0.min.js"></script>
