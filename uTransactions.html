@@ -64,6 +64,78 @@
       </div>
     </div>
   </div>
+  <div class="profile--modal">
+    <a href="#" class="modal-close">
+      <img src="img/close.png" alt="">
+    </a>
+    <div class="modal-content">
+      <div class="main-modal">
+        <div class="w-100 flex-wrap flex flex-center flex-middle">
+          <div class="w-100 welcome-text">
+            <div class="text-center">
+              <p class="w-100 c-white">user</p>
+              <h1 class="w-100 c-white am-type mt-0 mb-0">Information</h1>
+            </div>
+          </div>
+          <div class="u-info w-64 mt-32">
+            <div class="u-image text-center">
+              <img src="img/user-info.png" alt="">
+              <p class="light c-dim-white">Upload Image</p>
+            </div>
+            <div class="u-main--content">
+              <form>
+                <div class="row w-100 flex-between">
+                  <div>
+                    <input type="text" class="normal--input" placeholder="First Name">
+                  </div>
+                  <div>
+                    <input type="ext" class="normal--input" placeholder="Last Name">
+                  </div>
+                  <div>
+                    <input type="text" class="normal--input" placeholder="Username">
+                  </div>
+                  <div>
+                    <input type="text" class="normal--input" placeholder="Email Address">
+                  </div>
+                  <div>
+                    <input type="text" class="normal--input" placeholder="Phone Address">
+                  </div>
+                  <div>
+                    <input type="date" class="normal--input" placeholder="Date of birth">
+                  </div>
+                  <hr>
+                  <div class="w-100 kyc--content">
+                    <div class="text-cont text-right am-type pt-4 pb-4 c-white">
+                      Kyc Documents
+                    </div>
+                    <div>
+                    <div class="k+">+</div>
+                      <span class="d-block text-center mt-12 c-dim-white">Passport</span>
+                    </div>
+                    <div>
+                    <div class="k+">+</div>
+                      <span class="d-block text-center mt-12 c-dim-white">ID Front</span>
+                    </div>
+                    <div>
+                    <div class="k+">+</div>
+                      <span class="d-block text-center mt-12 c-dim-white">ID Back</span>
+                    </div>
+                    <div>
+                    <div class="k+">+</div>
+                      <span class="d-block text-center mt-12 c-dim-white">Selfie</span>
+                    </div>
+                  </div>
+                  <div class="w-100 mt-40 text-center">
+                    <button class="user--btn">Update</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="withdraw--page--transfer--modals">
     <section class="withdraw--modal">
       <a href="#" class="modal-close">
@@ -216,7 +288,7 @@
               </li>
             </ul>
             <div class="user-account">
-              <a href="#">
+              <a href="#" data-link-class="profile--active">
                 <img class="mr-12" src="img/user.png" alt="user icon">
                 <span>+234 813 733 1443</span>
               </a>
@@ -403,175 +475,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
-<script>
-  /*Chart 1*/
-  var ctx = document.getElementById("myChart");
-  ctx.getContext('2d');
-  ctx.height = 40;
-  var options = {
-    responsive: true, // Instruct chart js to respond nicely.
-    maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height
-    bezierCurve: false,
-    color: 'red',
-    scales: {
-      xAxes: [{
-        gridLines: {
-          display: false
-        },
-        ticks: {
-          display: false //this will remove only the label
-        }
-      }],
-      yAxes: [{
-        gridLines: {
-          display: false
-        },
-        ticks: {
-          display: false //this will remove only the label
-        }
-      }]
-    }, legend: {
-      display: false,
-    },
-    elements: {
-      line: {
-        tension: 0
-      },
-      point: {
-        radius: 0
-      }
-    }
-  };
-  var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels: ["Tokyo", "Mumbai", "Mexico City", "Shanghai", "Sao Paulo", "New York", "Karachi", "Buenos Aires", "Delhi", "Moscow"],
-      datasets: [{
-        label: 'Series 1', // Name the series
-        data: [500, 50, 2424, 14040, 14141, 4111, 4544, 47, 5555, 6811], // Specify the data values array
-        fill: false,
-        lineTension: 0,
-        borderColor: '#4451ff', // Add custom color border (Line)
-        backgroundColor: '#4451ff', // Add custom color background (Points and Fill)
-        borderWidth: 1 // Specify bar border width
-      }]
-    },
-    options: options
-  });
-
-
-  /*Chart 2*/
-  var ctx1 = document.getElementById("myChart1");
-  ctx1.getContext('2d');
-  ctx1.height = 40;
-  var options = {
-    responsive: true, // Instruct chart js to respond nicely.
-    maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height
-    bezierCurve: false,
-    color: 'red',
-    scales: {
-      xAxes: [{
-        gridLines: {
-          display: false
-        },
-        ticks: {
-          display: false //this will remove only the label
-        }
-      }],
-      yAxes: [{
-        gridLines: {
-          display: false
-        },
-        ticks: {
-          display: false //this will remove only the label
-        }
-      }]
-    }, legend: {
-      display: false,
-    },
-    elements: {
-      line: {
-        tension: 0
-      },
-      point: {
-        radius: 0
-      }
-    }
-  };
-
-  var myChart1 = new Chart(ctx1, {
-    type: 'line',
-    data: {
-      labels: ["Tokyo", "Mumbai", "Mexico City", "Shanghai", "Sao Paulo", "New York", "Karachi", "Buenos Aires", "Delhi", "Moscow"],
-      datasets: [{
-        label: 'Series 1', // Name the series
-        data: [500, 50, 2424, 14040, 14141, 4111, 4544, 47, 5555, 6811], // Specify the data values array
-        fill: false,
-        lineTension: 0,
-        borderColor: '#f98e12', // Add custom color border (Line)
-        backgroundColor: '#f98e12', // Add custom color background (Points and Fill)
-        borderWidth: 1 // Specify bar border width
-      }]
-    },
-    options: options
-  });
-
-  /*Chart 3*/
-  var ctx2 = document.getElementById("myChart2");
-  ctx2.getContext('2d');
-  ctx2.height = 40;
-  var options = {
-    responsive: true, // Instruct chart js to respond nicely.
-    maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height
-    bezierCurve: false,
-    color: 'red',
-    scales: {
-      xAxes: [{
-        gridLines: {
-          display: false
-        },
-        ticks: {
-          display: false //this will remove only the label
-        }
-      }],
-      yAxes: [{
-        gridLines: {
-          display: false
-        },
-        ticks: {
-          display: false //this will remove only the label
-        }
-      }]
-    }, legend: {
-      display: false,
-    },
-    elements: {
-      line: {
-        tension: 0
-      },
-      point: {
-        radius: 0
-      }
-    }
-  };
-
-  var myChart2 = new Chart(ctx2, {
-    type: 'line',
-    data: {
-      labels: ["Tokyo", "Mumbai", "Mexico City", "Shanghai", "Sao Paulo", "New York", "Karachi", "Buenos Aires", "Delhi", "Moscow"],
-      datasets: [{
-        label: 'Series 1', // Name the series
-        data: [500, 50, 2424, 14040, 14141, 4111, 4544, 47, 5555, 6811], // Specify the data values array
-        fill: false,
-        lineTension: 0,
-        borderColor: '#50599c', // Add custom color border (Line)
-        backgroundColor: '#50599c', // Add custom color background (Points and Fill)
-        borderWidth: 1 // Specify bar border width
-      }]
-    },
-    options: options
-  });
-</script>
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
   window.ga = function () {

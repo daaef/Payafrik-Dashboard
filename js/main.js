@@ -1,5 +1,6 @@
 const navLinks = document.querySelectorAll('.nav-links li a');
 const myCanvas = document.querySelector('.my-canvas');
+const userAccountLink = document.querySelector('.user-account a');
 const modalClose = document.querySelectorAll('.modal-close');
 
 const walletContent = document.querySelector('.wallet-content');
@@ -13,12 +14,18 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 
 navLinks.forEach(
   function(navlink) {
+    console.log(navlink);
       navlink.addEventListener('click', function () {
           myCanvas.classList.add(navlink.dataset.linkClass)
       })
   },
   'myThisArg'
 );
+
+console.log(userAccountLink);
+userAccountLink.addEventListener('click', function () {
+  myCanvas.classList.add(userAccountLink.dataset.linkClass)
+});
 
 function resetWalletModal(){
   document.querySelectorAll('.wallet--modals>div').forEach(function (modal) {
