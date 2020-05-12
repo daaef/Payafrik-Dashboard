@@ -1,0 +1,589 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>PayAfrik Dashboard UI | User Transactions</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="img/Africoin.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="img/Africoin.png" type="image/x-icon">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body data-barba="wrapper">
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+  your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div class="my-canvas">
+  <div class="buy--token--modal">
+    <a href="#" class="modal-close">
+      <img src="img/close.png" alt="">
+    </a>
+    <div class="modal-content">
+      <div class="main-modal">
+        <div class="w-100">
+          <div class="modal-title">
+            <h3 class="light text-center">BUY AFK</h3>
+            <h3 class="am-type">token</h3>
+          </div>
+          <div class="token-details">
+            <p class="highlight">AVAILABLE TOKEN</p>
+            <h1>2,500.24</h1>
+            <p class="light">1 AFK TOKEN = 1.00 NGN</p>
+          </div>
+          <div class="token--description">
+            <p class="c-white">
+              You can use AFK tokens to carry out transactions on this platform from purchasing utilities to other items
+              in our mart. you can also transfer them to your AFK mastercard and make payments on physical machines or
+              withdraw from an ATM.
+            </p>
+          </div>
+          <div class="cash--crypto--btns">
+            <div>
+              <div class="sub-button mr-50">
+                <button>BUY WITH CASH</button>
+              </div>
+
+              <div class="sub-button ml-56">
+                <button>BUY WITH CRYPTO</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="withdraw--page--transfer--modals">
+    <section class="withdraw--modal">
+      <a href="#" class="modal-close">
+        <img src="img/close.png" alt="">
+      </a>
+      <div class="modal-content">
+        <div class="main-modal">
+          <div class="modal-title">
+            <h3 class="light text-center">WITHDRAW</h3>
+            <h3 class="am-type">token</h3>
+          </div>
+          <div class="token-details">
+            <p class="highlight">AVAILABLE TOKEN</p>
+            <h1>2,500.24</h1>
+            <p class="light">1 AFK TOKEN = 1.00 NGN</p>
+          </div>
+          <div class="account--smart-card">
+            <div class="bank--account">
+              <h1 class="form-title text-right am-type c-white">to Bank Account</h1>
+              <form>
+                <div>
+                  <img src="img/bank.png" alt="">
+                  <input id="bank" type="text" placeholder="The bank you are transferring to">
+                  <label for="bank">Bank</label>
+                </div>
+                <div class="mt-20">
+                  <img src="img/recipient.png" alt="">
+                  <input id="recipient" type="text" placeholder="The phone number of the user you are transferring to">
+                  <label for="recipient">Recipients <span class="c-white">Phone number</span></label>
+                </div>
+                <div class="mt-20">
+                  <img src="img/tokenam.png" alt="">
+                  <input id="token" type="text" placeholder="How much you want to transfer">
+                  <label for="token">Token <span class="c-white">Amount</span></label>
+                </div>
+                <div class="text-right sub--btn--holder">
+                  <div class="sub-button mt-20">
+                    <button>WITHDRAW TO BANK</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="smart--card">
+              <h1 class="form-title text-left am-type c-white">to smart Card</h1>
+              <form>
+                <div>
+                  <img src="img/user_name.png" alt="">
+                  <input id="uname" type="text" placeholder="The user you are transferring to">
+                  <label for="uname">Users <span class="c-white">Name</span></label>
+                </div>
+                <div class="mt-20">
+                  <img src="img/recipcard.png" alt="">
+                  <input id="recsma" type="text" placeholder="The card number of the user you are transferring to">
+                  <label for="recsma">Recipients <span class="c-white">Card number</span></label>
+                </div>
+                <div class="mt-20">
+                  <img src="img/tokensmartam.png" alt="">
+                  <input id="tokam" type="text" placeholder="How much you want to transfer">
+                  <label for="tokam">Token <span class="c-white">Amount</span></label>
+                </div>
+                <div class="sub-button mt-20">
+                  <button>WITHDRAW TO CARD</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-content">
+      <aside>
+        <div class="links--and--logo">
+          <div class="logo">
+            <img src="img/logo.png" alt="logo">
+          </div>
+          <ul>
+            <li>
+              <a href="index.html">
+                <img class="mr-20" src="img/home.png" alt="">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="wallet.html">
+                <img class="mr-20" src="img/side-wallet.png" alt="">
+                Wallet
+              </a>
+            </li>
+            <li>
+              <a href="mart.html">
+                <img class="mr-20" src="img/mart.png" alt="">
+                Mart
+              </a>
+            </li>
+            <li class="active">
+              <a href="exchange.html">
+                <img class="mr-20" src="img/side-exchange.png" alt="">
+                Exchange
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img class="mr-20" src="img/chat.png" alt="">
+                Chat
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="main-links">
+          <li>
+            <a href="">
+              <img class="mr-20" src="img/setting.png" alt="">
+              Setting
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="mr-20" src="img/exit.png" alt="">
+              Exit
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <main>
+        <header>
+          <nav>
+            <div class="balance">
+              <img src="img/logo.png" class="mobile-logo" alt="logo">
+              <span>AfriToken:</span>
+              <h3>2,500.24</h3>
+            </div>
+            <ul class="nav-links">
+              <li class="mr-32">
+                <a href="#" data-link-class="buy-token-active">
+                  <img class="mr-8" src="img/plus.png" alt="plus">
+                  BUY TOKEN
+                </a>
+              </li>
+              <li class="mr-32">
+                <a href="#" data-link-class="withdraw-active">
+                  <img class="mr-8" src="img/wallet.png" alt="wallet">
+                  WITHDRAW
+                </a>
+              </li>
+              <li>
+                <a href="#" data-link-class="transfer-token-active">
+                  <img class="mr-8" src="img/transfer.png" alt="transfer">
+                  TRANSFER AFRITOKEN
+                </a>
+              </li>
+            </ul>
+            <div class="user-account">
+              <a href="#">
+                <img class="mr-12" src="img/user.png" alt="user icon">
+                <span>+234 813 733 1443</span>
+              </a>
+            </div>
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+              <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="nav-dropdown">
+              <div class="balance">
+                <span>AfriToken:</span>
+                <h3>2,500.24</h3>
+              </div>
+              <ul class="nav-links">
+                <li>
+                  <a href="#" data-link-class="buy-token-active">
+                    <img class="mr-8" src="img/plus.png" alt="plus">
+                    BUY TOKEN
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-link-class="withdraw-active">
+                    <img class="mr-8" src="img/wallet.png" alt="wallet">
+                    WITHDRAW
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-link-class="transfer-token-active">
+                    <img class="mr-8" src="img/transfer.png" alt="transfer">
+                    TRANSFER AFRITOKEN
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="#" class=" mt-8">
+                    <img class="mr-8" src="img/home.png" alt="">
+                    HOME
+                  </a>
+                </li>
+                <li>
+                  <a href="" class=" mt-8">
+                    <img class="mr-8" src="img/side-wallet.png" alt="">
+                    WALLET
+                  </a>
+                </li>
+                <li>
+                  <a href="" class=" mt-8">
+                    <img class="mr-8" src="img/mart.png" alt="">
+                    MART
+                  </a>
+                </li>
+                <li>
+                  <a href="" class=" mt-8">
+                    <img class="mr-8" src="img/side-exchange.png" alt="">
+                    EXCHANGE
+                  </a>
+                </li>
+                <li>
+                  <a href="" class=" mt-8">
+                    <img class="mr-8" src="img/chat.png" alt="">
+                    CHAT
+                  </a>
+                </li>
+                <li>
+                  <a href="" class=" mt-8">
+                    <img class="mr-8" src="img/setting.png" alt="">
+                    SETTING
+                  </a>
+                </li>
+                <li>
+                  <a href="" class=" mt-8">
+                    <img class="mr-8" src="img/exit.png" alt="">
+                    EXIT
+                  </a>
+                </li>
+              </ul>
+              <div class="user-account">
+                <a href="#">
+                  <img class="mr-12" src="img/user.png" alt="user icon">
+                  <span>+234 813 733 1443</span>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <section class="dash-body">
+          <div class="utrans--content">
+            <div class="w-100">
+              <div class="welcome-text">
+                <div class="text-center">
+                  <p class="w-100 c-white">user</p>
+                  <h1 class="w-100 c-white am-type mt-0 mb-0">Transactions</h1>
+                </div>
+              </div>
+              <form>
+                <div class="row trans--grid mt-20 w-100 flex-between">
+                  <div>
+                    <input type="text" class="normal--input" placeholder="Status">
+                  </div>
+                  <div>
+                    <input type="date" class="normal--input" placeholder="Date From">
+                  </div>
+                  <div>
+                    <input type="date" class="normal--input" placeholder="Date To">
+                  </div>
+                  <div>
+                    <input type="text" class="normal--input" placeholder="Filter by Receiver">
+                  </div>
+                  <div>
+                    <input type="submit" class="normal--input" value="Apply">
+                  </div>
+                </div>
+              </form>
+              <div class="mt-20">
+                <div class="text-right c-dim-white">
+                  Showing 10 of 254
+                </div>
+                <table>
+                  <thead>
+                  <tr>
+                    <th>S/N</th>
+                    <th>Status</th>
+                    <th>Transaction</th>
+                    <th>Memo/Remarks</th>
+                    <th>Date</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+    <section class="transfer--modal">
+      <a href="#" class="modal-close">
+        <img src="img/close.png" alt="">
+      </a>
+      <div class="modal-content">
+        <div class="main-modal">
+          <div class="modal-title">
+            <h3 class="light text-center">TRANSFER</h3>
+            <h3 class="am-type">token</h3>
+          </div>
+          <div class="token-details">
+            <p class="highlight">AVAILABLE TOKEN</p>
+            <h1>2,500.24</h1>
+            <p class="light">1 AFK TOKEN = 1.00 NGN</p>
+          </div>
+          <div class="transfer--info flex flex-center">
+            <form class="text-center">
+              <div class="mt-20">
+                <img src="img/recipient.png" alt="">
+                <input id="rec-phone" type="text" placeholder="The phone number of the user you are transferring to">
+                <label for="rec-phone">Recipients <span class="c-white">Phone number</span></label>
+              </div>
+              <div class="mt-20">
+                <img src="img/tokenam.png" alt="">
+                <input id="token-am" type="text" placeholder="How much you want to transfer">
+                <label for="token-am">Token <span class="c-white">Amount</span></label>
+              </div>
+              <div class="text-right sub--btn--holder w-100">
+                <div class="sub-button mt-20 w-100">
+                  <button class="w-100">TRANSFER</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<script src="js/vendor/modernizr-3.8.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script>
+  /*Chart 1*/
+  var ctx = document.getElementById("myChart");
+  ctx.getContext('2d');
+  ctx.height = 40;
+  var options = {
+    responsive: true, // Instruct chart js to respond nicely.
+    maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height
+    bezierCurve: false,
+    color: 'red',
+    scales: {
+      xAxes: [{
+        gridLines: {
+          display: false
+        },
+        ticks: {
+          display: false //this will remove only the label
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          display: false
+        },
+        ticks: {
+          display: false //this will remove only the label
+        }
+      }]
+    }, legend: {
+      display: false,
+    },
+    elements: {
+      line: {
+        tension: 0
+      },
+      point: {
+        radius: 0
+      }
+    }
+  };
+  var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ["Tokyo", "Mumbai", "Mexico City", "Shanghai", "Sao Paulo", "New York", "Karachi", "Buenos Aires", "Delhi", "Moscow"],
+      datasets: [{
+        label: 'Series 1', // Name the series
+        data: [500, 50, 2424, 14040, 14141, 4111, 4544, 47, 5555, 6811], // Specify the data values array
+        fill: false,
+        lineTension: 0,
+        borderColor: '#4451ff', // Add custom color border (Line)
+        backgroundColor: '#4451ff', // Add custom color background (Points and Fill)
+        borderWidth: 1 // Specify bar border width
+      }]
+    },
+    options: options
+  });
+
+
+  /*Chart 2*/
+  var ctx1 = document.getElementById("myChart1");
+  ctx1.getContext('2d');
+  ctx1.height = 40;
+  var options = {
+    responsive: true, // Instruct chart js to respond nicely.
+    maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height
+    bezierCurve: false,
+    color: 'red',
+    scales: {
+      xAxes: [{
+        gridLines: {
+          display: false
+        },
+        ticks: {
+          display: false //this will remove only the label
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          display: false
+        },
+        ticks: {
+          display: false //this will remove only the label
+        }
+      }]
+    }, legend: {
+      display: false,
+    },
+    elements: {
+      line: {
+        tension: 0
+      },
+      point: {
+        radius: 0
+      }
+    }
+  };
+
+  var myChart1 = new Chart(ctx1, {
+    type: 'line',
+    data: {
+      labels: ["Tokyo", "Mumbai", "Mexico City", "Shanghai", "Sao Paulo", "New York", "Karachi", "Buenos Aires", "Delhi", "Moscow"],
+      datasets: [{
+        label: 'Series 1', // Name the series
+        data: [500, 50, 2424, 14040, 14141, 4111, 4544, 47, 5555, 6811], // Specify the data values array
+        fill: false,
+        lineTension: 0,
+        borderColor: '#f98e12', // Add custom color border (Line)
+        backgroundColor: '#f98e12', // Add custom color background (Points and Fill)
+        borderWidth: 1 // Specify bar border width
+      }]
+    },
+    options: options
+  });
+
+  /*Chart 3*/
+  var ctx2 = document.getElementById("myChart2");
+  ctx2.getContext('2d');
+  ctx2.height = 40;
+  var options = {
+    responsive: true, // Instruct chart js to respond nicely.
+    maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height
+    bezierCurve: false,
+    color: 'red',
+    scales: {
+      xAxes: [{
+        gridLines: {
+          display: false
+        },
+        ticks: {
+          display: false //this will remove only the label
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          display: false
+        },
+        ticks: {
+          display: false //this will remove only the label
+        }
+      }]
+    }, legend: {
+      display: false,
+    },
+    elements: {
+      line: {
+        tension: 0
+      },
+      point: {
+        radius: 0
+      }
+    }
+  };
+
+  var myChart2 = new Chart(ctx2, {
+    type: 'line',
+    data: {
+      labels: ["Tokyo", "Mumbai", "Mexico City", "Shanghai", "Sao Paulo", "New York", "Karachi", "Buenos Aires", "Delhi", "Moscow"],
+      datasets: [{
+        label: 'Series 1', // Name the series
+        data: [500, 50, 2424, 14040, 14141, 4111, 4544, 47, 5555, 6811], // Specify the data values array
+        fill: false,
+        lineTension: 0,
+        borderColor: '#50599c', // Add custom color border (Line)
+        backgroundColor: '#50599c', // Add custom color background (Points and Fill)
+        borderWidth: 1 // Specify bar border width
+      }]
+    },
+    options: options
+  });
+</script>
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
